@@ -30,3 +30,9 @@ jobs:
         with:
           name: testng-reports
           path: target/surefire-reports/
+
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: automation-jar
+          path: target/*.jar
