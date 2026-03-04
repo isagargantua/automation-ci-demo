@@ -1,20 +1,18 @@
 name: Java CI Pipeline
 
 on:
-	push:
-	  branches: [ main ]
+  push:
+    branches: [ main ]
 
-	pull_request:
-	  branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Code
         uses: actions/checkout@v4
 
